@@ -14,5 +14,7 @@ import java.util.List;
  * @since 2020-05-06
  */
 public interface IReaderService{
+    int insert(Reader reader);
+
     List<Reader> getAll();
 }

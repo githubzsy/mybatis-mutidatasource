@@ -23,6 +23,11 @@ public class ReaderServiceImpl implements IReaderService {
     ReaderMapper readerMapper;
 
     @Override
+    public int insert(Reader reader) {
+        return readerMapper.insert(reader);
+    }
+
+    @Override
     public List<Reader> getAll() {
         return readerMapper.getAll();
     }

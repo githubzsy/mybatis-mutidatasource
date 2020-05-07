@@ -7,4 +7,7 @@
     <select id="getAll" resultType="com.zhoushiya.mybatismutidatasource.generator.testdb2.entity.Reader">
         select * from testdb2.reader;
     </select>
+    <insert id="insert" parameterType="com.zhoushiya.mybatismutidatasource.generator.testdb2.entity.Reader">
+        insert into testdb2.reader (name) values (#{name});
+    </insert>
 </mapper>

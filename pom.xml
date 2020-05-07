@@ -82,6 +82,12 @@
             <version>1.5.16</version>
         </dependency>
 
+        <!-- atomikos分布式事务 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jta-atomikos</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
