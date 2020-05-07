@@ -17,7 +17,7 @@ import java.util.List;
 @RequestMapping("/rest")
 public class ArticleController {
 
-    @Resource
+    @Resource(name="articleServiceImpl")
     IArticleService articleService;
 
     /**

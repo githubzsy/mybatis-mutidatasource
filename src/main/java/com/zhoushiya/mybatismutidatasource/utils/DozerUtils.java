@@ -1,5 +1,6 @@
 package com.zhoushiya.mybatismutidatasource.utils;
 
+import com.google.common.collect.Lists;
 import org.dozer.DozerBeanMapperBuilder;
 import org.dozer.Mapper;
 
@@ -13,7 +14,7 @@ public class DozerUtils {
     static Mapper mapper = DozerBeanMapperBuilder.buildDefault();
 
     public static <T> List<T> mapList(Collection sourceList, Class<T> destinationClass){
-        List destinationList = Arrays.asList();
+        List destinationList = Lists.newArrayList();
         for (Iterator i$ = sourceList.iterator(); i$.hasNext();){
             Object sourceObject = i$.next();
             Object destinationObject = mapper.map(sourceObject, destinationClass);

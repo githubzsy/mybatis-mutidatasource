@@ -11,6 +11,6 @@
         SELECT * FROM testdb.article where id=#{id}
     </select>
     <insert id="insert" parameterType="com.zhoushiya.mybatismutidatasource.generator.testdb.entity.Article">
-        insert into testdb.article(id,title,author) values (#{id},#{title},#{author})
+        insert into testdb.article(id,title,author,create_time) values (#{id},#{title},#{author},#{createTime})
     </insert>
 </mapper>

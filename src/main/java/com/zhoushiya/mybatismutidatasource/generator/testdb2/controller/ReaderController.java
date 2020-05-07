@@ -20,7 +20,11 @@ import java.util.List;
 @RestController
 @RequestMapping("/rest")
 public class ReaderController {
-    @Resource
+
+    /**
+     * 此处必须指定注入的名称，因为IReaderService和ReaderServiceImpl都注入了
+     */
+    @Resource(name="readerServiceImpl")
     IReaderService readerService;
 
     @GetMapping("/reader")
